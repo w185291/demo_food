@@ -6,7 +6,7 @@ demo_food
 
 php artisan migrate
 
-## 3.下seeder
+## 3.下seed
 
 php artisan db:seed
 
