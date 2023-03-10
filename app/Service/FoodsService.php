@@ -99,8 +99,4 @@ class FoodsService
         return $this->FoodsRepository->updateDataById($id, $data);
     }
 
-
-    public function findAll(){
-        return $this->FoodsRepository->findAll();
-    }
 }
