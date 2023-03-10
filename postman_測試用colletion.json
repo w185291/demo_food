@@ -1,0 +1,371 @@
+{
+	"info": {
+		"_postman_id": "1df6f246-27e1-4594-b896-1207bd8808f3",
+		"name": "demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2216900"
+	},
+	"item": [
+		{
+			"name": "stores list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://local.demo.com.tw/api/stores/list?page=1",
+					"protocol": "http",
+					"host": [
+						"local",
+						"demo",
+						"com",
+						"tw"
+					],
+					"path": [
+						"api",
+						"stores",
+						"list"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "stores store",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "store_name",
+							"value": "測試帳號99999999",
+							"type": "text"
+						},
+						{
+							"key": "store_phone",
+							"value": "0920457906",
+							"type": "text"
+						},
+						{
+							"key": "store_business_start_time",
+							"value": "20:41",
+							"type": "text"
+						},
+						{
+							"key": "store_business_end_time",
+							"value": "23:59",
+							"type": "text"
+						},
+						{
+							"key": "store_longitude",
+							"value": "24.874606",
+							"type": "text"
+						},
+						{
+							"key": "store_latitude",
+							"value": "121.256690",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://local.demo.com.tw/api/stores/store",
+					"protocol": "http",
+					"host": [
+						"local",
+						"demo",
+						"com",
+						"tw"
+					],
+					"path": [
+						"api",
+						"stores",
+						"store"
+					],
+					"query": [
+						{
+							"key": "store_name",
+							"value": "測試",
+							"disabled": true
+						},
+						{
+							"key": "store_phone",
+							"value": "0920457906",
+							"disabled": true
+						},
+						{
+							"key": "store_business_start_time",
+							"value": "20:41",
+							"disabled": true
+						},
+						{
+							"key": "store_business_end_time",
+							"value": "23:59",
+							"disabled": true
+						},
+						{
+							"key": "store_longitude",
+							"value": "00:00:00",
+							"disabled": true
+						},
+						{
+							"key": "store_latitude",
+							"value": "23:59:00",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "stores show",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://local.demo.com.tw/api/stores/show/37",
+					"protocol": "http",
+					"host": [
+						"local",
+						"demo",
+						"com",
+						"tw"
+					],
+					"path": [
+						"api",
+						"stores",
+						"show",
+						"37"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "stores update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "store_name",
+							"value": "測試帳號QOOOO",
+							"type": "text"
+						},
+						{
+							"key": "store_phone",
+							"value": "0920457905",
+							"type": "text"
+						},
+						{
+							"key": "store_business_start_time",
+							"value": "20:41",
+							"type": "text"
+						},
+						{
+							"key": "store_business_end_time",
+							"value": "23:59",
+							"type": "text"
+						},
+						{
+							"key": "store_longitude",
+							"value": "24.874888",
+							"type": "text"
+						},
+						{
+							"key": "store_latitude",
+							"value": "11.256690",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://local.demo.com.tw/api/stores/update/37",
+					"protocol": "http",
+					"host": [
+						"local",
+						"demo",
+						"com",
+						"tw"
+					],
+					"path": [
+						"api",
+						"stores",
+						"update",
+						"37"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "food list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://local.demo.com.tw/api/foods/list?page=0&store_id=36&limit",
+					"protocol": "http",
+					"host": [
+						"local",
+						"demo",
+						"com",
+						"tw"
+					],
+					"path": [
+						"api",
+						"foods",
+						"list"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0",
+							"description": "page 0 all , other 50 1 page"
+						},
+						{
+							"key": "store_id",
+							"value": "36"
+						},
+						{
+							"key": "limit",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "foods store",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "store_id",
+							"value": "37",
+							"type": "text"
+						},
+						{
+							"key": "food_name",
+							"value": "測試蘋果AA",
+							"type": "text"
+						},
+						{
+							"key": "food_price",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "food_remark",
+							"value": "tetetetet",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://local.demo.com.tw/api/foods/store",
+					"protocol": "http",
+					"host": [
+						"local",
+						"demo",
+						"com",
+						"tw"
+					],
+					"path": [
+						"api",
+						"foods",
+						"store"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "foods show",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://local.demo.com.tw/api/foods/show/39",
+					"protocol": "http",
+					"host": [
+						"local",
+						"demo",
+						"com",
+						"tw"
+					],
+					"path": [
+						"api",
+						"foods",
+						"show",
+						"39"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "foods update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "store_id",
+							"value": "37",
+							"type": "text"
+						},
+						{
+							"key": "food_name",
+							"value": "TEST FOOD",
+							"type": "text"
+						},
+						{
+							"key": "food_price",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "food_remark",
+							"value": "TEST TEST232323333",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://local.demo.com.tw/api/foods/update/4096",
+					"protocol": "http",
+					"host": [
+						"local",
+						"demo",
+						"com",
+						"tw"
+					],
+					"path": [
+						"api",
+						"foods",
+						"update",
+						"4096"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
